@@ -1,0 +1,23 @@
+[user]
+    email = michiel@dutchnaoteam.nl
+    name = Michiel van der Meer
+[github]
+    user = m0re4u
+[color]
+    ui = true
+[push]
+    default = simple
+[alias]
+    arnoud = !echo visser
+    pp = !git pull && git push
+    cam = commit -am
+    cm = commit -m
+    unadd = reset HEAD --
+    uncommit = reset HEAD^
+    spop = !git stash && git pull && git stash pop
+    s = status
+    d = diff
+    lo = log --graph --decorate --abbrev-commit --all --pretty=tformat:'%C(auto)%h% %d %s%Creset %C(bold yellow)<%an>%Creset'
+[core]
+    editor = nano
+    pager = less
