@@ -141,5 +141,12 @@ alias clion="/home/m0re/data/CLion/bin/clion.sh"
 
 # restart internet
 alias fuckinginternet="sudo service network-manager restart"
+
 # Added by DNT installer - remove if you get kicked out and/or decide to stop
 . /home/m0re/projects/dnt/WDNT2017/util/scripts/dnt.bashrc
+
+# Gitkraken executable alias
+alias gitkraken="/home/m0re/data/gitkraken/gitkraken"
+
+# Add miniconda to PATH
+export PATH="$PATH:/home/m0re/data/miniconda3/m0re-bin/"
