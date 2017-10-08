@@ -93,6 +93,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# rebind diff command to colordiff
+alias diff='colordiff'
+
 # pretty print environment variables
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
