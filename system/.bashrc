@@ -96,6 +96,10 @@ alias l='ls -CF'
 # rebind diff command to colordiff
 alias diff='colordiff'
 
+# rebind python & python3 command to also show python version before executing
+alias python="echo -n \"Running \" && python --version && python"
+alias python3="echo -n \"Running \" && python3 --version && python3"
+
 # pretty print environment variables
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
@@ -146,7 +150,7 @@ alias clion="/home/m0re/data/CLion/bin/clion.sh"
 alias fuckinginternet="sudo service network-manager restart"
 
 # Added by DNT installer - remove if you get kicked out and/or decide to stop
-. /home/m0re/projects/dnt/WDNT2017/util/scripts/dnt.bashrc
+. /home/m0re/projects/dnt/WDNT2018/util/scripts/dnt.bashrc
 
 # Gitkraken executable alias
 alias gitkraken="/home/m0re/data/gitkraken/gitkraken"
