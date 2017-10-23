@@ -157,3 +157,8 @@ alias gitkraken="/home/m0re/data/gitkraken/gitkraken"
 
 # Add miniconda to PATH
 export PATH="$PATH:/home/m0re/data/miniconda3/m0re-bin/"
+
+# GOPATH variable required for go get
+export GOPATH="/home/m0re/projects/go"
+# Go binaries also part of PATH
+export PATH="$PATH:$GOPATH/bin"
