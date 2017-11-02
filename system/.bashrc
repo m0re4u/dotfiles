@@ -140,9 +140,6 @@ alias uni="cd ~/projects/uni"
 # Robocup shortcuts
 source ~/projects/dnt/robocup2017.sh
 
-# Torch stuff
-. /home/m0re/torch/install/bin/torch-activate
-
 # Systemwide CLion executable
 alias clion="/home/m0re/data/CLion/bin/clion.sh"
 
