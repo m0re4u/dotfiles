@@ -156,3 +156,6 @@ alias gitkraken="/home/m0re/data/gitkraken/gitkraken"
 export GOPATH="/home/m0re/projects/go"
 # Go binaries also part of PATH
 export PATH="$PATH:$GOPATH/bin"
+
+# Alias for jupyter notebook
+alias jupyter-notebook="~/.local/bin/jupyter-notebook"
