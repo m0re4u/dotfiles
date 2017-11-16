@@ -134,28 +134,28 @@ if ! shopt -oq posix; then
 fi
 
 # User specific aliases and functions
+
+# Path variables
 export PYTHONPATH=~/naoqi/pynaoqi-python2.7-2.1.3.3-linux64:$PYTHONPATH
-alias uni="cd ~/projects/uni"
-
-# Robocup shortcuts
-source ~/projects/dnt/robocup2017.sh
-
-# Systemwide CLion executable
-alias clion="/home/m0re/data/CLion/bin/clion.sh"
-
-# restart internet
-alias fuckinginternet="sudo service network-manager restart"
-
-# Added by DNT installer - remove if you get kicked out and/or decide to stop
-. /home/m0re/projects/dnt/WDNT2018/util/scripts/dnt.bashrc
-
-# Gitkraken executable alias
-alias gitkraken="/home/m0re/data/gitkraken/gitkraken"
-
 # GOPATH variable required for go get
 export GOPATH="/home/m0re/projects/go"
 # Go binaries also part of PATH
 export PATH="$PATH:$GOPATH/bin"
 
+# Added by DNT installer
+. /home/m0re/projects/dnt/WDNT2018/util/scripts/dnt.bashrc
+# Robocup shortcuts - AFTER including dnt.bashrc
+source ~/projects/dotfiles/system/robocup.sh
+
+# File structure alias
+alias uni="cd ~/projects/uni"
+
+# Alias for Gitkraken executable
+alias gitkraken="/home/m0re/data/gitkraken/gitkraken"
+# Alias for CLion executable
+alias clion="/home/m0re/data/CLion/bin/clion.sh"
 # Alias for jupyter notebook
 alias jupyter-notebook="~/.local/bin/jupyter-notebook"
+# Restart internet
+alias fuckinginternet="sudo service network-manager restart"
+# Alias for connecting to robolab WS
