@@ -158,4 +158,3 @@ alias clion="/home/m0re/data/CLion/bin/clion.sh"
 alias jupyter-notebook="~/.local/bin/jupyter-notebook"
 # Restart internet
 alias fuckinginternet="sudo service network-manager restart"
-# Alias for connecting to robolab WS

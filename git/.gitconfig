@@ -17,6 +17,7 @@
     spop = !git stash && git pull && git stash pop
     s = status
     d = diff
+    barchive = "!f() { git tag archive/\"$1\" \"$1\"; git push origin archive/\"$1\"; git branch -d \"$1\"; }; f"
     lo = log --graph --decorate --abbrev-commit --all --pretty=tformat:'%C(auto)%h% %d %s%Creset %C(bold yellow)<%an>%Creset'
 [core]
     editor = nano
