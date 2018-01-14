@@ -156,5 +156,6 @@ alias gitkraken="/home/m0re/data/gitkraken/gitkraken"
 alias clion="/home/m0re/data/CLion/bin/clion.sh"
 # Alias for jupyter notebook
 alias jupyter-notebook="~/.local/bin/jupyter-notebook"
+alias jn="jupyter-notebook"
 # Restart internet
 alias fuckinginternet="sudo service network-manager restart"
