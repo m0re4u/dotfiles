@@ -134,7 +134,7 @@ if ! shopt -oq posix; then
 fi
 
 # User specific aliases and functions
-
+export PROJECT_FOLDER="/home/m0re/projects"
 # Path variables
 export PYTHONPATH=~/naoqi/pynaoqi-python2.7-2.1.3.3-linux64:$PYTHONPATH
 # GOPATH variable required for go get
@@ -148,7 +148,7 @@ export PATH="$PATH:$GOPATH/bin"
 source ~/projects/dotfiles/system/robocup.sh
 
 # File structure alias
-alias uni="cd ~/projects/uni"
+alias uni="cd $PROJECT_FOLDER/uni"
 
 # Alias for Gitkraken executable
 alias gitkraken="/home/m0re/data/gitkraken/gitkraken"
@@ -157,5 +157,12 @@ alias clion="/home/m0re/data/CLion/bin/clion.sh"
 # Alias for jupyter notebook
 alias jupyter-notebook="~/.local/bin/jupyter-notebook"
 alias jn="jupyter-notebook"
+
+# Append trec_eval binary to PATH
+export PATH="$PATH:$PROJECT_FOLDER/uni/ir/trec_eval"
+
 # Restart internet
 alias fuckinginternet="sudo service network-manager restart"
+
+# Welcome message from ack :)
+ack --thpppt
