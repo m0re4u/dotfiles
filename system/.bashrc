@@ -138,14 +138,14 @@ export PROJECT_FOLDER="/home/m0re/projects"
 # Path variables
 export PYTHONPATH=~/naoqi/pynaoqi-python2.7-2.1.3.3-linux64:$PYTHONPATH
 # GOPATH variable required for go get
-export GOPATH="/home/m0re/projects/go"
+export GOPATH="$PROJECT_FOLDER/go"
 # Go binaries also part of PATH
 export PATH="$PATH:$GOPATH/bin"
 
 # Added by DNT installer
 . /home/m0re/projects/dnt/WDNT2018/util/scripts/dnt.bashrc
 # Robocup shortcuts - AFTER including dnt.bashrc
-source ~/projects/dotfiles/system/robocup.sh
+source $PROJECT_FOLDER/dotfiles/system/robocup.sh
 
 # File structure alias
 alias uni="cd $PROJECT_FOLDER/uni"
