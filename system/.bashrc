@@ -88,26 +88,21 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
+# Some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# rebind diff command to colordiff
+# Rebind diff command to colordiff
 alias diff='colordiff'
 
-# rebind python & python3 command to also show python version before executing
+# Rebind python & python3 command to also show python version before executing
 alias python="echo -n \"Running \" && python --version && python"
 alias python3="echo -n \"Running \" && python3 --version && python3"
 
-# pretty print environment variables
+# {retty print environment variables
 alias path='echo -e ${PATH//:/\\n}'
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
-
-# The Fuck support :^)
-eval "$(thefuck --alias)"
-# You can use whatever you want as an alias, like for Mondays:
-# eval "$(thefuck --alias FUCK)"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -117,12 +112,11 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# enable programmable completion features (you don't need to enable
+# Enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
@@ -134,35 +128,26 @@ if ! shopt -oq posix; then
 fi
 
 # User specific aliases and functions
-export PROJECT_FOLDER="/home/m0re/projects"
-# Path variables
-export PYTHONPATH=~/naoqi/pynaoqi-python2.7-2.1.3.3-linux64:$PYTHONPATH
-# GOPATH variable required for go get
-export GOPATH="$PROJECT_FOLDER/go"
-# Go binaries also part of PATH
-export PATH="$PATH:$GOPATH/bin"
+# Robocup shortcuts - Needs DNT_ROOT from dnt.bash for DNT shortcuts
+# Will omit those shortcuts if DNT_ROOT is not set
+if [ -f ~/.robocup ]; then
+    . ~/.robocup
+fi
 
-# Added by DNT installer
-. /home/m0re/projects/dnt/WDNT2018/util/scripts/dnt.bashrc
-# Robocup shortcuts - AFTER including dnt.bashrc
-source $PROJECT_FOLDER/dotfiles/system/robocup.sh
-
-# File structure alias
+# File structure alias for Uni work
 alias uni="cd $PROJECT_FOLDER/uni"
-
-# Alias for Gitkraken executable
-alias gitkraken="/home/m0re/data/gitkraken/gitkraken"
-# Alias for CLion executable
-alias clion="/home/m0re/data/CLion/bin/clion.sh"
-# Alias for jupyter notebook
-alias jupyter-notebook="~/.local/bin/jupyter-notebook"
-alias jn="jupyter-notebook"
-
-# Append trec_eval binary to PATH
-export PATH="$PATH:$PROJECT_FOLDER/uni/ir/trec_eval"
 
 # Restart internet
 alias fuckinginternet="sudo service network-manager restart"
 
-# Welcome message from ack :)
-ack --thpppt
+# Load system specific alias/shortcuts/loads - ignored by dotfiles to allow
+# for easier installing of dotfiles across multiple devices/hosts
+if [ -f ~/.bash_load ]; then
+    . ~/.bash_load
+fi
+
+# Change directory to home, wherever you are
+cd ~
+
+# Greeter :)
+fortune | cowsay -f tux

@@ -1,0 +1,14 @@
+export ROBOLABWS="146.50.28.70"
+export ROBOLABWS2="146.50.28.74"
+
+if [ -z ${DNT_ROOT+x} ]; then
+    echo "DNT_ROOT is unset, not loading dnt shortcuts";
+else
+    echo "DNT_ROOT is set to '$DNT_ROOT'";
+    alias robocopy="${DNT_ROOT}/util/scripts/robocopy"
+    alias dnb="cd $DNT_ROOT"
+    alias dnt="cd $(dirname $DNT_ROOT)"
+fi
+
+alias robossh="ssh mvdmeer@$ROBOLABWS"
+alias robossh2="ssh mvdmeer@$ROBOLABWS2"
