@@ -21,7 +21,7 @@ set $red                 #aa0e50
 set $green               #1dcc9f
 
 ## THEME COLORS
-set $bg-color 	         #212121
+set $bg-color            #212121
 set $inactive-bg-color   #212121
 set $text-color          #ffffff
 set $inactive-text-color #212121
@@ -174,6 +174,21 @@ floating_modifier $mod
 # resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 
+# MULTIMEDIA KEYS
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -198,30 +213,27 @@ mode "resize" {
 }
 
 
-## i3-bar
+# i3-bar
 
 bar {
-        status_command		i3status -c ~/.config/i3status/config
-        tray_padding		3
-        font pango:Roboto	Light 8
+  status_command      i3status -c ~/.config/i3status/config
+  tray_padding        3
+  font pango:         Roboto 10
 
-	colors {
-		# whole color settings
-		background   $black
-		statusline   $white
-		separator    $grey
+  colors {
+    # whole color settings
+    background   $black
+    statusline   $white
+    separator    $grey
 
-		# type             border      backgr.     font
-		focused_workspace  $grey       $white      $black
-		active_workspace   $grey       $white      $black
-		inactive_workspace $grey       $black      $white
-		urgent_workspace   $valencia   $valencia   $black
-	}
-	# i3bar position
-	position top
-
-        # height of the bar in pixels
-        # height 25
+    # type             border      backgr.     font
+    focused_workspace  $grey       $white      $black
+    active_workspace   $grey       $white      $black
+    inactive_workspace $grey       $black      $white
+    urgent_workspace   $valencia   $valencia   $black
+  }
+  # i3bar position
+  position top
 }
 
 exec albert
