@@ -29,11 +29,45 @@ for f in $SYS_FILES $GIT_FILES $VIM_FILES
 do
     file="$(basename $f)"
     if [[ ! -e  "$HOME/$file" ]]; then
-        echo "Linking $file to ~/"
+        echo "Linking $file to $HOME/"
         ln -s $f "$HOME/$file"
     else
         echo "$file already linked"
     fi
+done
+# Link i3 files to ~/.config/i3/
+i3_FILES="$DOT_FOLDER/i3/??*"
+i3_CONFIG_DIR="$HOME/.config/i3/"
+# check if i3 config directory exists
+if [[ ! -d $i3_CONFIG_DIR ]]; then
+  mkdir -p $i3_CONFIG_DIR
+fi
+for f in $i3_FILES
+do
+  file="$(basename $f)"
+  if [[ ! -e  "$i3_CONFIG_DIR/$file" ]]; then
+      echo "Linking $file to $i3_CONFIG_DIR"
+      ln -s $f "$i3_CONFIG_DIR/$file"
+  else
+      echo "$file already linked"
+  fi
+done
+
+i3_STATUS_FILES="$DOT_FOLDER/i3status/??*"
+i3_STATUS_CONFIG_DIR="$HOME/.config/i3status/"
+# check if i3status config directory exists
+if [[ ! -d $i3_STATUS_CONFIG_DIR ]]; then
+  mkdir -p $i3_STATUS_CONFIG_DIR
+fi
+for f in $i3_STATUS_FILES
+do
+  file="$(basename $f)"
+  if [[ ! -e  "$i3_STATUS_CONFIG_DIR/$file" ]]; then
+      echo "Linking $file to $i3_STATUS_CONFIG_DIR/"
+      ln -s $f "$i3_STATUS_CONFIG_DIR/$file"
+  else
+      echo "$file already linked"
+  fi
 done
 
 # Install greeter
