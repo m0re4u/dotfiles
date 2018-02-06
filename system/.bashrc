@@ -127,6 +127,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Load system specific alias/shortcuts/loads - ignored by dotfiles to allow
+# for easier installing of dotfiles across multiple devices/hosts
+if [ -f ~/.bash_load ]; then
+    . ~/.bash_load
+fi
+
 # User specific aliases and functions
 # Robocup shortcuts - Needs DNT_ROOT from dnt.bash for DNT shortcuts
 # Will omit those shortcuts if DNT_ROOT is not set
@@ -139,12 +145,6 @@ alias uni="cd $PROJECT_FOLDER/uni"
 
 # Restart internet
 alias fuckinginternet="sudo service network-manager restart"
-
-# Load system specific alias/shortcuts/loads - ignored by dotfiles to allow
-# for easier installing of dotfiles across multiple devices/hosts
-if [ -f ~/.bash_load ]; then
-    . ~/.bash_load
-fi
 
 # Change directory to home, wherever you are
 cd ~
