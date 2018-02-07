@@ -13,6 +13,14 @@ echo -n "Do you want to symlink i3 config ([y]/n): "
 read LINK_i3
 LINK_i3=${LINK_i3:-y}
 
+echo -n "Do you want to symlink Albert config ([y]/n): "
+read LINK_ALBERT
+LINK_ALBERT=${LINK_ALBERT:-y}
+
+echo -n "Do you want to symlink terminator config ([y]/n): "
+read LINK_TERMINATOR
+LINK_TERMINATOR=${LINK_TERMINATOR:-y}
+
 if [ -z ${HOME+x} ]; then
     echo "HOME is unset, not able to check for existing links";
     exit 1
@@ -81,6 +89,31 @@ if [[ "$LINK_i3" == "y" ]]; then
       echo "$i3_STATUS_CONFIG_DIR/$file already linked"
     fi
   done
+fi
+
+if [[ "$LINK_ALBERT" == "y" ]]; then
+  echo "Setting Albert symlinks.."
+  ALBERT_CONFIG_DIR="$HOME/.config/"
+  f="$DOT_FOLDER/system/albert.conf"
+  file=$(basename $f)
+  if [[ ! -e  "$ALBERT_CONFIG_DIR/$file" ]]; then
+    echo "Linking $file to $ALBERT_CONFIG_DIR/"
+    ln -s $f "$ALBERT_CONFIG_DIR/$file"
+  else
+    echo "$ALBERT_CONFIG_DIR/$file already linked"
+  fi
+fi
+
+if [[ "$LINK_TERMINATOR" == "y" ]]; then
+  echo "Setting Terminator symlinks.."
+  TERMINATOR_CONFIG_DIR="$HOME/.config/terminator"
+  file="$DOT_FOLDER/system/terminator.config"
+  if [[ ! -e  "$TERMINATOR_CONFIG_DIR/config" ]]; then
+    echo "Linking $file to $TERMINATOR_CONFIG_DIR/"
+    ln -s $file "$TERMINATOR_CONFIG_DIR/config"
+  else
+    echo "$file already linked"
+  fi
 fi
 
 # Install greeter
