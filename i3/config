@@ -112,7 +112,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+t exec "i3-nagbar -t warning -m 'Exit i3 and end X session?' -b 'Yes, exit i3' 'i3-msg exit'"
-
+# Lock using i3lock
+bindsym Mod4+l exec i3lock -i ~/data/Pictures/Wallpapers/iss_earth.png -p default -n -f
 
 # MANAGE WORKSPACES
 # name the workspaces (icons require fontawesome)
@@ -236,5 +237,8 @@ bar {
   position top
 }
 
-exec albert
-exec xflux -l 52.37 -g 4.9
+exec --no-startup-id albert
+exec --no-startup-id xflux -l 52.37 -g 4.9
+# TODO: fix location for other devices
+# Laptop specific wallpaper
+exec --no-startup-id feh --bg-fill ~/data/Pictures/Wallpapers/spacex_fh.jpg
