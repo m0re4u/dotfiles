@@ -61,25 +61,13 @@ bindsym $mod+k            focus down
 bindsym $mod+i            focus up
 bindsym $mod+l            focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left         focus left
-bindsym $mod+Down         focus down
-bindsym $mod+Up           focus up
-bindsym $mod+Right        focus right
-
 # move focused window
 bindsym $mod+Shift+j      move left
 bindsym $mod+Shift+k      move down
 bindsym $mod+Shift+i      move up
 bindsym $mod+Shift+l      move right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left   move left
-bindsym $mod+Shift+Down   move down
-bindsym $mod+Shift+Up     move up
-bindsym $mod+Shift+Right  move right
-
-# split in horizontal orientationud
+# split in horizontal orientation
 bindsym $mod+h            split h
 
 # split in vertical orientation
@@ -113,7 +101,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+t exec "i3-nagbar -t warning -m 'Exit i3 and end X session?' -b 'Yes, exit i3' 'i3-msg exit'"
 # Lock using i3lock
-bindsym Mod4+l exec i3lock -i ~/data/Pictures/Wallpapers/iss_earth.png -p default -n -f
+bindsym Mod4+l exec i3lock -i ~/data/Pictures/Wallpapers/winxp2.png -p win -n -f -e
 
 # MANAGE WORKSPACES
 # name the workspaces (icons require fontawesome)
