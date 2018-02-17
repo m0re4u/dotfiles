@@ -146,8 +146,5 @@ alias uni="cd $PROJECT_FOLDER/uni"
 # Restart internet
 alias fuckinginternet="sudo service network-manager restart"
 
-# Change directory to home, wherever you are
-cd ~
-
 # Greeter :)
 fortune | cowsay -f tux
