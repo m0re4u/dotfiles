@@ -12,6 +12,7 @@
     pp = !git pull && git push
     cam = commit -am
     cm = commit -m
+    sl = stash list --format='%gd (%cr): %gs'
     unadd = reset HEAD --
     uncommit = reset HEAD^
     spop = !git stash && git pull && git stash pop
