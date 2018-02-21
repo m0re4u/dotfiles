@@ -147,4 +147,4 @@ alias uni="cd $PROJECT_FOLDER/uni"
 alias fuckinginternet="sudo service network-manager restart"
 
 # Greeter :)
-fortune | cowsay -f tux
+fortune -as | cowsay -f tux

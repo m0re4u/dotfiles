@@ -164,6 +164,9 @@ assign [class="Thunderbird"] $workspace_4
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Dont follow mouse focus
+focus_follows_mouse no
+
 # resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 
