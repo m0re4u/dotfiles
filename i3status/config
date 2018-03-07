@@ -7,10 +7,11 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
+  output_format = "i3bar"
   colors = true
-  color_good =     '#1dcc9f'
-  color_degraded = '#27c282'
-  color_bad =      '#aa0e50'
+  color_good = "#00FF00"
+  color_degraded = "#FFFF00"
+  color_bad = "#FF0000"
   interval = 5
 }
 
@@ -25,10 +26,12 @@ order += "volume master"
 order += "tztime local"
 
 disk "/" {
-  format = " %avail/%total:/"
+  format = "ROOT: %avail/%total"
+  prefix_type = custom
 }
 disk "/home/m0re" {
-  format = " %avail/%total:~/"
+  format = "/home/m0re/ %avail/%total"
+  prefix_type = custom
 }
 
 wireless _first_ {
@@ -43,7 +46,7 @@ ethernet _first_ {
 }
 
 battery 1 {
-  format = "%status %remaining (%consumption)"
+  format = "%status %percentage (%remaining)"
   status_chr = ""
   status_bat = ""
   status_full = ""

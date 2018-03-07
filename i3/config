@@ -9,6 +9,7 @@ set $mod Mod1
 
 ## COLORS
 set $grey                #212121
+set $light-grey          #555555
 set $valencia            #e64a19
 set $magenta             #a673a6
 set $blue                #7182A8
@@ -16,8 +17,8 @@ set $cyan                #6da3a1
 set $black               #000000
 set $white               #b7bbbd
 set $yellow              #27c282
-set $red                 #aa0e50
-set $green               #1dcc9f
+set $red                 #FF0000
+set $green               #00FF00
 
 ## THEME COLORS
 set $bg-color            #313131
@@ -219,10 +220,10 @@ bar {
     # whole color settings
     background   $black
     statusline   $white
-    separator    $grey
+    separator    $light-grey
 
-    # type             border      backgr.     font
-    focused_workspace  $grey       $white      $black
+    # type             border      background  text
+    focused_workspace  $green      $black      $green
     active_workspace   $grey       $white      $black
     inactive_workspace $grey       $black      $white
     urgent_workspace   $valencia   $valencia   $black
@@ -231,7 +232,6 @@ bar {
   position top
 }
 
-exec --no-startup-id albert
 exec --no-startup-id nm-applet
 exec --no-startup-id xflux -l 52.37 -g 4.9
 # TODO: fix location for other devices
