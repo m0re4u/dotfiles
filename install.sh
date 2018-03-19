@@ -100,6 +100,6 @@ if [[ "$LINK_TERMINATOR" == "y" ]]; then
 fi
 
 # Install greeter
-sudo apt install fortune cowsay
+sudo apt install fortune cowsay imagemagick scrot
 
 echo "Source .bashrc or restart your terminal to load your system changes"

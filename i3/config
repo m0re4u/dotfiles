@@ -105,7 +105,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+t exec "i3-nagbar -t warning -m 'Exit i3 and end X session?' -b 'Yes, exit i3' 'i3-msg exit'"
 # Lock using i3lock
-bindsym Mod4+l exec i3lock -i ~/data/Pictures/Wallpapers/winxp2.png -p win -n -f -e
+bindsym Mod4+l exec ~/projects/dotfiles/scripts/i3lock++.sh convolve
 
 # MANAGE WORKSPACES
 # name the workspaces (icons require fontawesome)
