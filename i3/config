@@ -217,7 +217,7 @@ bar {
     # whole color settings
     background   $black
     statusline   $white
-    separator    $light-grey
+    separator    $blue
 
     # type             border      background  text
     focused_workspace  $green      $black      $green
