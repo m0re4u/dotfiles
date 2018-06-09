@@ -148,4 +148,3 @@ alias fuckinginternet="sudo service network-manager restart"
 
 # Greeter :)
 # fortune -as | cowsay -f tux
-

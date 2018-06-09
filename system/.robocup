@@ -5,6 +5,7 @@ if [ -z ${DNT_ROOT+x} ]; then
     echo "DNT_ROOT is unset, not loading dnt shortcuts";
 else
     alias robocopy="${DNT_ROOT}/util/scripts/robocopy"
+    alias dni="/${DNT_ROOT}/build/interface/dnt-interface"
     alias dnb="cd $DNT_ROOT"
     alias dnt="cd $(dirname $DNT_ROOT)"
 fi
