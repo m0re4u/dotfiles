@@ -26,16 +26,16 @@ order += "volume master"
 order += "tztime local"
 
 disk "/" {
-  format = "ROOT: %avail/%total"
+  format = "root: %avail/%total"
   prefix_type = custom
 }
 disk "/home/m0re" {
-  format = "/home/m0re/ %avail/%total"
+  format = "home %avail/%total"
   prefix_type = custom
 }
 
 wireless _first_ {
-  format_up = " (%quality @ %essid) %ip"
+  format_up = " (%quality @ %essid)"
   format_down = " down"
 }
 
@@ -61,8 +61,8 @@ cpu_temperature 0 {
 }
 
 volume master {
-  format = "VOL: %volume"
-  format_muted = "VOL: muted"
+  format = "V: %volume"
+  format_muted = "V: mtd"
   device = "default"
   mixer = "Master"
   mixer_idx = 0

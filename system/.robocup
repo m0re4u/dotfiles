@@ -6,6 +6,7 @@ if [ -z ${DNT_ROOT+x} ]; then
 else
     alias robocopy="${DNT_ROOT}/util/scripts/robocopy"
     alias dni="/${DNT_ROOT}/build/interface/dnt-interface"
+    alias dnc="/${DNT_ROOT}/build/teamcopy/teamcopy"
     alias dnb="cd $DNT_ROOT"
     alias dnt="cd $(dirname $DNT_ROOT)"
 fi
