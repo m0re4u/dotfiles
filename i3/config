@@ -112,13 +112,13 @@ bindsym Mod4+l exec ~/projects/dotfiles/scripts/i3lock++.sh convolve
 set $workspace_1  "1: terminal"
 set $workspace_2  "2: code"
 set $workspace_3  "3: browser"
-set $workspace_4  "4: email"
-set $workspace_5  "5: spotify"
-set $workspace_6  "6: six"
-set $workspace_7  "7: seven"
-set $workspace_8  "8: eight"
-set $workspace_9  "9: nine"
-set $workspace_10 "10: ten"
+set $workspace_4  "4"
+set $workspace_5  "5"
+set $workspace_6  "6"
+set $workspace_7  "7"
+set $workspace_8  "8"
+set $workspace_9  "9"
+set $workspace_10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace_1
@@ -153,6 +153,7 @@ exec --no-startup-id i3-msg "workspace $workspace_1; exec /usr/bin/terminator"
 
 # assign some applications to certain workspaces
 assign [class="Atom"] $workspace_2
+assign [class="VSCode"] $workspace_2
 assign [class="Google"] $workspace_3
 assign [class="Thunderbird"] $workspace_4
 

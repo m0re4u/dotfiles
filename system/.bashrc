@@ -147,4 +147,7 @@ alias uni="cd $PROJECT_FOLDER/uni"
 alias fuckinginternet="sudo service network-manager restart"
 
 # Greeter :)
-# fortune -as | cowsay -f tux
+fortune -as | cowsay -f tux
+
+# fix segfault for import torch
+export LD_LIBRARY_PATH=/usr/lib/nvidia-384
