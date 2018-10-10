@@ -1,0 +1,30 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "alt+enter",
+    "command": "-debug.openBreakpointToSide",
+    "when": "breakpointsFocused"
+  },
+  {
+    "key": "alt+enter",
+    "command": "-editor.action.selectAllMatches",
+    "when": "editorFocus && findWidgetVisible"
+  }
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  }
+  { "key": "ctrl+l",
+    "command": "expandLineSelection",
+    "when": "textInputFocus" },
+  { "key": "shift+enter",
+    "command": "-python.execSelectionInTerminal",
+    "when": "editorFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'python'" },
+  { "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode" },
+
+]

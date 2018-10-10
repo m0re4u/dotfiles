@@ -1,0 +1,47 @@
+{
+    "editor.fontSize": 12,
+    "editor.tabSize": 2,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "all",
+    "workbench.sideBar.location": "left",
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": true,
+    "workbench.editor.enablePreview": false,
+    "github.username": "m0re4u",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.list.openMode": "doubleClick",
+    "workbench.colorTheme": "Life on mars",
+    "C_Cpp.workspaceParsingPriority": "low",
+    "workbench.statusBar.feedback.visible": false,
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ],
+    "doxdocgen.file.fileOrder": [
+        "empty",
+        "empty",
+        "file",
+        "author",
+        "date"
+    ],
+    "doxdocgen.generic.authorTag": "@author name",
+    "doxdocgen.generic.order": [
+        "empty",
+        "tparam",
+        "param",
+        "return"
+    ],
+    "files.trimTrailingWhitespace": true,
+    "clang-format.fallbackStyle": "Google",
+    "problems.decorations.enabled": false,
+    "search.location": "panel",
+    "python.jediEnabled": false,
+    "window.zoomLevel": 0,
+    "files.associations": {
+        "*.py": "python"
+    },
+    "python.linting.pylintPath": "/home/m0re/.local/bin/pylint",
+    "workbench.editor.openPositioning": "last",
+    "gitProjectManager.baseProjectsFolders": ["/home/m0re/projects"],
+}
