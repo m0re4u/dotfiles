@@ -151,3 +151,7 @@ fortune -as | cowsay -f tux
 
 # fix segfault for import torch
 export LD_LIBRARY_PATH=/usr/lib/nvidia-384
+
+# Prevent GTK errors when launching evince from terminal
+# https://unix.stackexchange.com/questions/230238/starting-x-applications-from-the-terminal-and-the-warnings-that-follow
+export NO_AT_BRIDGE=1

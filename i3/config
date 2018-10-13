@@ -226,7 +226,7 @@ bar {
     urgent_workspace   $valencia   $valencia   $black
   }
   # i3bar position
-  position top
+  position bottom
 }
 
 exec --no-startup-id nm-applet

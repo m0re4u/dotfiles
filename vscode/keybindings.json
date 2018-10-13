@@ -26,5 +26,6 @@
     "when": "editorFocus && !findInputFocussed && !replaceInputFocussed && editorLangId == 'python'" },
   { "key": "ctrl+m",
     "command": "-editor.action.toggleTabFocusMode" },
-
+  { "key": "enter",
+    "command": "-acceptSelectedSuggestionOnEnter"},
 ]
