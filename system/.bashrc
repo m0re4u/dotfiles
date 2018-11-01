@@ -146,6 +146,13 @@ alias uni="cd $PROJECT_FOLDER/uni"
 # Restart internet
 alias fuckinginternet="sudo service network-manager restart"
 
+# Show when we booted up
+alias uptime="date -d \"$(</proc/uptime awk '{print $1}') seconds ago\""
+# Zathura settings
+export XDG_CONFIG_HOME="/home/m0re/.config"
+alias reader="zathura"
+
+
 # Greeter :)
 fortune -as | cowsay -f tux
 
