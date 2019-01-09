@@ -233,4 +233,4 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xflux -l 52.37 -g 4.9
 # TODO: fix location for other devices
 # Laptop specific wallpaper
-exec --no-startup-id feh --bg-fill ~/data/Pictures/Wallpapers/dudespacelmao.jpg
+exec_always --no-startup-id feh --bg-fill ~/data/Pictures/Wallpapers/douwespipi.jpg

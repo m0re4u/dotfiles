@@ -1,6 +1,5 @@
 {
     "editor.fontSize": 12,
-    "editor.tabSize": 2,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderWhitespace": "all",
     "workbench.sideBar.location": "left",
@@ -10,7 +9,6 @@
     "github.username": "m0re4u",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.list.openMode": "doubleClick",
-    "workbench.colorTheme": "Life on mars",
     "C_Cpp.workspaceParsingPriority": "low",
     "workbench.statusBar.feedback.visible": false,
     "editor.rulers": [
@@ -43,5 +41,13 @@
     },
     "python.linting.pylintPath": "/home/m0re/.local/bin/pylint",
     "workbench.editor.openPositioning": "last",
-    "gitProjectManager.baseProjectsFolders": ["/home/m0re/projects"],
+    "gitProjectManager.baseProjectsFolders": [
+        "/home/m0re/projects"
+    ],
+    "[python]": {},
+    "editor.renderControlCharacters": true,
+    "breadcrumbs.enabled": true,
+    "workbench.colorTheme": "Nord",
+    "python.linting.enabled": false,
+    "python.linting.pylintEnabled": false,
 }
