@@ -27,7 +27,7 @@ read LINK_VSCODE
 LINK_VSCODE=${LINK_VSCODE:-y}
 echo -n "Is this a remote setup (y/[n]): "
 read REMOTE
-REMOTE=${LINK_VSCODE:-n}
+REMOTE=${REMOTE:-n}
 
 
 
