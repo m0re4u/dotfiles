@@ -183,7 +183,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Check for new monitors
-bindsym $mod+m exec --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
+bindsym $mod+m exec --no-startup-id xrandr --output HDMI1 --auto --above eDP1
 
 # Toggle mouse pad
 bindsym $mod+b exec ~/projects/dotfiles/scripts/touchpad_toggle.sh

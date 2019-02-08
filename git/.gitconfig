@@ -24,4 +24,4 @@
 [core]
     editor = nano
     pager = less
-    autocrlf = true
+    autoclrf = false
