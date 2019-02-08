@@ -152,7 +152,7 @@ alias uptime="date -d \"$(</proc/uptime awk '{print $1}') seconds ago\""
 export XDG_CONFIG_HOME="/home/m0re/.config"
 alias reader="zathura"
 
-if [[ -n $DOT_REMOTE ]]; then
+if [[ -z $DOT_REMOTE ]]; then
     # Greeter :)
     fortune -as | cowsay -f tux
 fi
