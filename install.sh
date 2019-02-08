@@ -25,6 +25,9 @@ LINK_TERMINATOR=${LINK_TERMINATOR:-y}
 echo -n "Do you want to symlink vscode config ([y]/n): "
 read LINK_VSCODE
 LINK_VSCODE=${LINK_VSCODE:-y}
+echo -n "Is this a remote setup (y/[n]): "
+read REMOTE
+REMOTE=${LINK_VSCODE:-n}
 
 
 
@@ -43,6 +46,9 @@ fi
 export PROJECT_FOLDER="$(dirname $DOT_FOLDER)"
 echo "PROJECT_FOLDER is set to '$PROJECT_FOLDER'"
 
+BASH_LOAD="${DOT_FOLDER}/system/.bash_load"
+touch ${BASH_LOAD}
+echo "Created ${BASH_LOAD}"
 
 link_general () {
   echo " -- Setting general symlinks.."
@@ -146,7 +152,11 @@ if [[ "$LINK_VSCODE" == "y" ]]; then
   link_vscode
 fi
 
-# Install stuff
-sudo apt install fortune cowsay imagemagick scrot
+if [[ $REMOTE == "n" ]]; then
+  # Install stuff
+  sudo apt install fortune cowsay imagemagick scrot
+else
+  echo "export DOT_REMOTE=1" >> ${BASH_LOAD}
+fi
 
 echo "Source .bashrc or restart your terminal to load your system changes"

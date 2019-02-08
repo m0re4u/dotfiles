@@ -152,9 +152,10 @@ alias uptime="date -d \"$(</proc/uptime awk '{print $1}') seconds ago\""
 export XDG_CONFIG_HOME="/home/m0re/.config"
 alias reader="zathura"
 
-
-# Greeter :)
-fortune -as | cowsay -f tux
+if [[ -n $DOT_REMOTE ]]; then
+    # Greeter :)
+    fortune -as | cowsay -f tux
+fi
 
 # fix segfault for import torch
 export LD_LIBRARY_PATH=/usr/lib/nvidia-384
