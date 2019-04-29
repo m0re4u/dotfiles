@@ -47,7 +47,12 @@
     "[python]": {},
     "editor.renderControlCharacters": true,
     "breadcrumbs.enabled": true,
-    "workbench.colorTheme": "Monokai Dimmed",
     "python.linting.enabled": false,
     "python.pythonPath": "python3",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Visual Studio Light",
 }
