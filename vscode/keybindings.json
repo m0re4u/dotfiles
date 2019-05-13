@@ -5,6 +5,12 @@
     "command": "-debug.openBreakpointToSide",
     "when": "breakpointsFocused"
   },
+  { "key": "shift+alt+up",
+    "command": "-markdown.extension.onCopyLineUp"
+  },
+  { "key": "shift+alt+down",
+    "command": "-markdown.extension.onCopyLineDown"
+  },
   {
     "key": "alt+enter",
     "command": "-editor.action.selectAllMatches",
