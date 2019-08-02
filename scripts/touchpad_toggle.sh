@@ -1,10 +1,11 @@
 #!/bin/bash
 
-state=`synclient -l | fgrep TouchpadOff | sed 's/^.*= //'`
-if [ $state -eq 1 ]; then
-        synclient TouchpadOff=0
-        notify-send "Turned on touchpad" -t 2000
-else
-        synclient TouchpadOff=1
+device="SYN1B7F:00 06CB:CD41 Touchpad"
+state=$(xinput list-props "$device" | grep "Device Enabled" | grep -o "[01]$")
+if [ "$state" == "1" ]; then
+        xinput --disable "$device"
         notify-send "Turned off touchpad" -t 2000
+else
+        xinput --enable "$device"
+        notify-send "Turned on touchpad" -t 2000
 fi

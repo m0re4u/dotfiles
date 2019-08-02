@@ -16,21 +16,16 @@ general {
 }
 
 order += "disk /"
-order += "disk /home/m0re"
 order += "run_watch DHCP"
 order += "wireless _first_"
 order += "ethernet _first_"
-order += "battery 1"
+order += "battery 0"
 order += "cpu_temperature 0"
 order += "volume master"
 order += "tztime local"
 
 disk "/" {
   format = "root: %avail/%total"
-  prefix_type = custom
-}
-disk "/home/m0re" {
-  format = "home %avail/%total"
   prefix_type = custom
 }
 
@@ -45,15 +40,17 @@ ethernet _first_ {
   format_down = ""
 }
 
-battery 1 {
+battery 0 {
   format = "%status %percentage (%remaining)"
   status_chr = ""
   status_bat = ""
   status_full = ""
+  status_unk = ""
   hide_seconds = "true"
   integer_battery_capacity = "true"
   low_threshold = "20"
-  threshold_type = "time"
+  threshold_type = "percentage"
+  path="/sys/class/power_supply/BAT%d/uevent"
 }
 
 cpu_temperature 0 {

@@ -143,9 +143,6 @@ fi
 # File structure alias for Uni work
 alias uni="cd $PROJECT_FOLDER/uni"
 
-# Restart internet
-alias fuckinginternet="sudo service network-manager restart"
-
 # Show when we booted up
 alias uptime="date -d \"$(</proc/uptime awk '{print $1}') seconds ago\""
 # Zathura settings
@@ -156,10 +153,3 @@ if [[ -z $DOT_REMOTE ]]; then
     # Greeter :)
     fortune -as | cowsay -f tux
 fi
-
-# fix segfault for import torch
-export LD_LIBRARY_PATH=/usr/lib/nvidia-384
-
-# Prevent GTK errors when launching evince from terminal
-# https://unix.stackexchange.com/questions/230238/starting-x-applications-from-the-terminal-and-the-warnings-that-follow
-export NO_AT_BRIDGE=1

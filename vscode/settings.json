@@ -35,7 +35,7 @@
     "problems.decorations.enabled": false,
     "search.location": "panel",
     "python.jediEnabled": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "files.associations": {
         "*.py": "python"
     },
@@ -55,4 +55,5 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.colorTheme": "Visual Studio Light",
+    "explorer.openEditors.visible": 0,
 }
