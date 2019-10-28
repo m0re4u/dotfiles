@@ -232,4 +232,4 @@ bar {
 exec --no-startup-id nm-applet
 exec --no-startup-id xflux -l 52.37 -g 4.9
 # Laptop specific wallpaper
-exec_always --no-startup-id feh --bg-fill /home/m0re/Pictures/spaceshuttle.jpg
+exec_always --no-startup-id feh --bg-fill /home/m0re/pictures/spaceshuttle.jpg

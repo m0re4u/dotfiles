@@ -10,12 +10,3 @@ else
     alias dnb="cd $DNT_ROOT"
     alias dnt="cd $(dirname $DNT_ROOT)"
 fi
-
-alias robossh="ssh mvdmeer@$ROBOLABWS"
-alias robossh2="ssh mvdmeer@$ROBOLABWS2"
-
-
-function _rnb() {
-  ssh -N -f -L "localhost:$1:localhost:$2" "mvdmeer@$ROBOLABWS"
-}
-alias robonotebook=_rnb

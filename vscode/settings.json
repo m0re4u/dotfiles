@@ -6,32 +6,14 @@
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": true,
     "workbench.editor.enablePreview": false,
-    "github.username": "m0re4u",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.list.openMode": "doubleClick",
-    "C_Cpp.workspaceParsingPriority": "low",
-    "workbench.statusBar.feedback.visible": false,
     "editor.rulers": [
         80,
         100,
         120
     ],
-    "doxdocgen.file.fileOrder": [
-        "empty",
-        "empty",
-        "file",
-        "author",
-        "date"
-    ],
-    "doxdocgen.generic.authorTag": "@author name",
-    "doxdocgen.generic.order": [
-        "empty",
-        "tparam",
-        "param",
-        "return"
-    ],
     "files.trimTrailingWhitespace": true,
-    "clang-format.fallbackStyle": "Google",
     "problems.decorations.enabled": false,
     "search.location": "panel",
     "python.jediEnabled": false,
@@ -41,9 +23,6 @@
     },
     "python.linting.pylintPath": "/home/m0re/.local/bin/pylint",
     "workbench.editor.openPositioning": "last",
-    "gitProjectManager.baseProjectsFolders": [
-        "/home/m0re/projects"
-    ],
     "[python]": {},
     "editor.renderControlCharacters": true,
     "breadcrumbs.enabled": true,
@@ -51,9 +30,10 @@
     "python.pythonPath": "python3",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "C_Cpp.clang_format_fallbackStyle": "Google",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.colorTheme": "Visual Studio Light",
     "explorer.openEditors.visible": 0,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.wordWrap": "on",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Default Light+",
 }
