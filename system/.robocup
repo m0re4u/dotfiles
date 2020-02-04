@@ -1,12 +1,3 @@
 export ROBOLABWS="146.50.28.70"
 export ROBOLABWS2="146.50.28.74"
 
-if [ -z ${DNT_ROOT+x} ]; then
-    echo "DNT_ROOT is unset, not loading dnt shortcuts";
-else
-    alias robocopy="${DNT_ROOT}/util/scripts/robocopy"
-    alias dni="/${DNT_ROOT}/build/interface/dnt-interface"
-    alias dnc="/${DNT_ROOT}/build/teamcopy/teamcopy"
-    alias dnb="cd $DNT_ROOT"
-    alias dnt="cd $(dirname $DNT_ROOT)"
-fi

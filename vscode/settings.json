@@ -21,13 +21,13 @@
     "files.associations": {
         "*.py": "python"
     },
-    "python.linting.pylintPath": "/home/m0re/.local/bin/pylint",
     "workbench.editor.openPositioning": "last",
     "[python]": {},
     "editor.renderControlCharacters": true,
     "breadcrumbs.enabled": true,
     "python.linting.enabled": false,
     "python.pythonPath": "python3",
+    "python.linting.pylintPath": "/usr/bin/pylint",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "editor.suggestSelection": "first",
@@ -35,5 +35,12 @@
     "latex-workshop.view.pdf.viewer": "tab",
     "editor.wordWrap": "on",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "files.exclude": {
+        "**/*.pyc": true
+    },
+    "editor.acceptSuggestionOnEnter": "smart",
+    "pico8.executablePath": "/home/m0re/projects/gamejam/pico-8/pico8",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
 }
