@@ -1,5 +1,3 @@
-xinput set-prop "SYN1B7F:00 06CB:CD41 Touchpad" 288 1
-xinput set-prop "SYN1B7F:00 06CB:CD41 Touchpad" 290 1
-xinput set-prop "SYN1B7F:00 06CB:CD41 Touchpad" 321 1
-xinput set-prop "SYN1B7F:00 06CB:CD41 Touchpad" 322 1
+xinput set-prop "SYN1B7F:00 06CB:CD41 Touchpad" 302 1
+xinput set-prop "SYN1B7F:00 06CB:CD41 Touchpad" 303 1
 PATH="/usr/local/texlive/2019/bin/x86_64-linux:$PATH"
