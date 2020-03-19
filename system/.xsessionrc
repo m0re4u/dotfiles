@@ -1,3 +1,2 @@
-xinput set-prop "SYN1B7F:00 06CB:CD41 Touchpad" 302 1
-xinput set-prop "SYN1B7F:00 06CB:CD41 Touchpad" 303 1
+xinput set-prop "SYN1B7F:00 06CB:CD41 Touchpad" "libinput Tapping Enabled" 1
 PATH="/usr/local/texlive/2019/bin/x86_64-linux:$PATH"
