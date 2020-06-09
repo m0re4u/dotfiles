@@ -15,9 +15,8 @@
     ],
     "files.trimTrailingWhitespace": true,
     "problems.decorations.enabled": false,
-    "search.location": "panel",
     "python.jediEnabled": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "files.associations": {
         "*.py": "python"
     },
@@ -39,7 +38,7 @@
     "files.exclude": {
         "**/*.pyc": true
     },
-    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.acceptSuggestionOnEnter": "off",
     "pico8.executablePath": "/home/m0re/projects/gamejam/pico-8/pico8",
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",

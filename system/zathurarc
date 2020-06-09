@@ -1,1 +1,2 @@
 set highlight-color "#FFFF00"
+set selection-clipboard clipboard
