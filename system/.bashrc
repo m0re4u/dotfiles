@@ -145,6 +145,8 @@ alias uni="cd $PROJECT_FOLDER/uni"
 
 # Show when we booted up
 alias uptime="date -d \"$(</proc/uptime awk '{print $1}') seconds ago\""
+# Printable date (for filenames)
+alias today='echo `date +"%Y-%m-%d"`'
 # Zathura settings
 export XDG_CONFIG_HOME="/home/m0re/.config"
 alias reader="zathura"

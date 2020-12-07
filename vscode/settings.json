@@ -42,4 +42,6 @@
     "pico8.executablePath": "/home/m0re/projects/gamejam/pico-8/pico8",
     "editor.minimap.renderCharacters": false,
     "editor.minimap.showSlider": "always",
+    "python.defaultInterpreterPath": "python3",
+    "python.languageServer": "Microsoft",
 }
