@@ -133,16 +133,6 @@ if [ -f ~/.bash_load ]; then
     . ~/.bash_load
 fi
 
-# User specific aliases and functions
-# Robocup shortcuts - Needs DNT_ROOT from dnt.bash for DNT shortcuts
-# Will omit those shortcuts if DNT_ROOT is not set
-if [ -f ~/.robocup ]; then
-    . ~/.robocup
-fi
-
-# File structure alias for Uni work
-alias uni="cd $PROJECT_FOLDER/uni"
-
 # Show when we booted up
 alias uptime="date -d \"$(</proc/uptime awk '{print $1}') seconds ago\""
 # Printable date (for filenames)
@@ -155,3 +145,4 @@ if [[ -z $DOT_REMOTE ]]; then
     # Greeter :)
     fortune -as | cowsay -f tux
 fi
+
